@@ -1,4 +1,4 @@
-/home/ader/Pulpit/PROG/build/CMakeFiles/rebuild_cache.dir
-/home/ader/Pulpit/PROG/build/CMakeFiles/edit_cache.dir
-/home/ader/Pulpit/PROG/build/CMakeFiles/main.dir
-/home/ader/Pulpit/PROG/build/CMakeFiles/program.dir
+/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles/rebuild_cache.dir
+/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles/edit_cache.dir
+/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles/main.dir
+/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles/program.dir

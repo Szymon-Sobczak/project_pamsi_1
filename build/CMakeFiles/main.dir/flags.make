@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ader/Pulpit/PROG/build -I/home/ader/Pulpit/PROG/inc
+CXX_INCLUDES = -I/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build -I/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/inc
 
 CXX_FLAGS = -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17
 

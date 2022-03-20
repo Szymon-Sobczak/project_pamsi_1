@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ader/Pulpit/PROG
+CMAKE_SOURCE_DIR = /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ader/Pulpit/PROG/build
+CMAKE_BINARY_DIR = /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/program.dir/depend.make
@@ -78,16 +78,16 @@ include CMakeFiles/program.dir/flags.make
 
 CMakeFiles/program.dir/src/dummy.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/dummy.cpp.o: ../src/dummy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ader/Pulpit/PROG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/program.dir/src/dummy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/dummy.cpp.o -c /home/ader/Pulpit/PROG/src/dummy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/program.dir/src/dummy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/dummy.cpp.o -c /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/src/dummy.cpp
 
 CMakeFiles/program.dir/src/dummy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/dummy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ader/Pulpit/PROG/src/dummy.cpp > CMakeFiles/program.dir/src/dummy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/src/dummy.cpp > CMakeFiles/program.dir/src/dummy.cpp.i
 
 CMakeFiles/program.dir/src/dummy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/dummy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ader/Pulpit/PROG/src/dummy.cpp -o CMakeFiles/program.dir/src/dummy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/src/dummy.cpp -o CMakeFiles/program.dir/src/dummy.cpp.s
 
 program: CMakeFiles/program.dir/src/dummy.cpp.o
 program: CMakeFiles/program.dir/build.make
@@ -104,6 +104,6 @@ CMakeFiles/program.dir/clean:
 .PHONY : CMakeFiles/program.dir/clean
 
 CMakeFiles/program.dir/depend:
-	cd /home/ader/Pulpit/PROG/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ader/Pulpit/PROG /home/ader/Pulpit/PROG /home/ader/Pulpit/PROG/build /home/ader/Pulpit/PROG/build /home/ader/Pulpit/PROG/build/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1 /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1 /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build /home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/program.dir/depend
 

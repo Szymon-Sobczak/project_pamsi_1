@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ader/Pulpit/PROG/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp" "/home/ader/Pulpit/PROG/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/foo.cpp.o"
+  "/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp" "/home/ader/Pulpit/PROJECT_PAMSI_1/PROJECT_PAMSI_1/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/foo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
