@@ -1,0 +1,4 @@
+/home/ader/Pulpit/PROG/build/CMakeFiles/rebuild_cache.dir
+/home/ader/Pulpit/PROG/build/CMakeFiles/edit_cache.dir
+/home/ader/Pulpit/PROG/build/CMakeFiles/main.dir
+/home/ader/Pulpit/PROG/build/CMakeFiles/program.dir

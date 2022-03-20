@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ader/Pulpit/PROG/build",
+  "command": "/usr/bin/c++  -I/home/ader/Pulpit/PROG/build -I/home/ader/Pulpit/PROG/inc -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/ader/Pulpit/PROG/app/main.cpp",
+  "file": "/home/ader/Pulpit/PROG/app/main.cpp"
+},
+{
+  "directory": "/home/ader/Pulpit/PROG/build",
+  "command": "/usr/bin/c++  -I/home/ader/Pulpit/PROG/build -I/home/ader/Pulpit/PROG/inc -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/dummy.cpp.o -c /home/ader/Pulpit/PROG/src/dummy.cpp",
+  "file": "/home/ader/Pulpit/PROG/src/dummy.cpp"
+}
+]
