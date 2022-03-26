@@ -3,14 +3,14 @@
 #include <fstream>
 #include <string.h>
 
-
 class SNode{ //węzeł listy jednokier.
 private:
     std::string elem; //wartość elementu listy
     int ID;
     SNode * next; //następny elem. listy
-    friend class SLinkedList; //dostęp dla listy
+    //friend class SLinkedList; //dostęp dla listy
     public:
+        SNode(int newID) {ID = newID;};
         std::string & getElement() {return elem;}
         SNode* getNext() {return next;}
         void setElement(std::string newE) {elem = newE;}
@@ -19,9 +19,10 @@ private:
 
 class SLinkedList{
     private:
+        int Length;
         SNode* head;
     public:
-        SLinkedList(){head = NULL;}; //konstruktor
+        SLinkedList(){Length = 0; head = NULL;}; //konstruktor
     // ~SLinkedList(); //destruktor
         bool empty() const; //sprawdzanie czy lista jest pusta
         const std::string & front() const; //zwraca pierwszy element
