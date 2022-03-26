@@ -1,13 +1,9 @@
-
-#include "List.hh"
+#include "Msg.hh"
 
 int main(){
-   SLinkedList test;
-   std::string tekst = "blablabla";
-   std::string tekst2 = "fifififi";
-   test.addFront(tekst);
-   std::cout << test.empty() << std::endl << test.front() << std::endl;
-   test.addFront(tekst2);
-   std::cout << test.front() << std::endl;
+   SLinkedList Message_sender;
+   std::string word, plain_text = "Ludzie lubią wymyślać potwory i potworności Sami sobie wydają się wtedy mniej potworni wtedy jakoś lżej im się robi na sercu I łatwiej im żyć.";
+   ParseByWord(plain_text, Message_sender);
+   Message_sender.displayList();
    return 0;
 } 

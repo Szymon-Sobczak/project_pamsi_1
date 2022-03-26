@@ -1,7 +1,7 @@
 #include <iostream>
 #include <memory>
 #include <fstream>
-#include <string.h>
+#include <string>
 
 class SNode{ //węzeł listy jednokier.
 private:
@@ -13,6 +13,7 @@ private:
         SNode(int newID) {ID = newID;};
         std::string & getElement() {return elem;}
         SNode* getNext() {return next;}
+        int getID() {return ID;};
         void setElement(std::string newE) {elem = newE;}
         void setNext(SNode* newN) {next = newN;}
 };
@@ -27,10 +28,12 @@ class SLinkedList{
         bool empty() const; //sprawdzanie czy lista jest pusta
         const std::string & front() const; //zwraca pierwszy element
         void addFront(const std::string & node_data); //dodawanie na początek listy
-        void displayList(struct SNode *node);
+        void Append(const std::string & node_data);
+        void insertAfter(const std::string & node_data, int ID);
+        void displayList();
         void removeFront(); 
+        
 };
-
 
 // template <typename E>
 // void SLinkedList<E>::displayList(struct Node *node){
