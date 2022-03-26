@@ -1,6 +1,9 @@
-#include <iostream>
+
+#include "List.hh"
 
 int main(){
-   std::cout << "Hello world \n";
+   SLinkedList test;
+
+   std::cout << test.empty() << std::endl;
    return 0;
 } 

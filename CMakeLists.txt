@@ -41,6 +41,7 @@ find_lto(CXX)
 
 set(SOURCES          # All .cpp files in src/
     src/dummy.cpp
+    src/List.cpp
 )
 #set(TESTFILES        # All .cpp files in tests/
 
