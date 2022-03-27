@@ -22,7 +22,7 @@ void SLinkedList::AddFront(const std::string & node_data){
 void SLinkedList::DisplayList(){
     SNode * Adress = head;
     while (Adress != NULL){
-        std::cout << Adress->getID() << ". " << Adress->getElement() << std::endl;;
+        std::cout << Adress->getElement() << " ";
         Adress = Adress->getNext();
     }
 }
@@ -63,47 +63,30 @@ void SLinkedList::insertAfter(const std::string & node_data, int ID){
 void SLinkedList::SwapFirstWithN(int range){
     SNode * FirstNode = head;
     SNode * FoundNode = head-> getNext();
-    SNode * PrevNode = head;  
-    SNode * Backup = head;  
-    if (range <= Length){
-        while (range != 2){
-        PrevNode = FoundNode;
-        FoundNode = FoundNode-> getNext();
-        range--;
-    }
+    SNode * PrevNode = NULL;  
+    SNode * Backup = NULL; 
+    if ( range > 2 && range <= Length){
+        for(int i = 0; i < range-2 ; i++){
+            PrevNode = FoundNode;
+            FoundNode = FoundNode -> getNext();
+        }
         Backup = FoundNode->getNext();
         head = FoundNode;
         FoundNode->setNext(FirstNode->getNext()); 
         FirstNode->setNext(Backup); 
         PrevNode->setNext(FirstNode); 
     }
-    else 
-        std::cout << "ERR: Out of range" << std::endl;
+    else if(range == 2){
+        FirstNode->setNext(FoundNode -> getNext());
+        FoundNode->setNext(FirstNode);
+        head = FoundNode;
+    }
+    else
+        std::cerr << "ERR: Out of range" << std::endl;
 }
-
-    // SNode * FirstNode = head;
-    // SNode * FoundNode = head-> getNext();
-    // SNode * PrevNode = head;  
-    // SNode * Backup = NULL;  
-    // while (range != 2){
-    //     PrevNode = FoundNode;
-    //     FoundNode = FoundNode-> getNext();
-    //     range--;
-    // }
-    // Backup = FoundNode->getNext();
-    // head = FoundNode;
-    // FoundNode->setNext(FirstNode->getNext()); 
-    // FirstNode->setNext(Backup); 
-    // PrevNode->setNext(FirstNode); 
 
 /* Wyswietlenie poczatku listy*/
 const std::string & SLinkedList::front() const{
-    // std::cout << "1||" << head -> getElement() << std::endl;
-    // std::cout << "2||" << head -> getNext() -> getElement() << std::endl;
-    // std::cout << "3||" << head -> getNext() -> getNext() -> getElement() << std::endl;
-    // std::cout << "4||" << head -> getNext() -> getNext() -> getNext() -> getElement() << std::endl;
-    // std::cout << "5||" << head -> getNext() -> getNext() -> getNext() -> getNext() -> getElement() << std::endl;
-    // std::cout << "6||" << head -> getNext()-> getNext() -> getNext() -> getNext() -> getNext() -> getElement() << std::endl;
     return  head -> getElement();
 }
 
