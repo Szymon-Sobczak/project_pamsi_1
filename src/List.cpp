@@ -22,7 +22,7 @@ void SLinkedList::AddFront(const std::string & node_data){
 void SLinkedList::DisplayList(){
     SNode * Adress = head;
     while (Adress != NULL){
-        std::cout << Adress->getElement() << " ";
+        std::cout /*<< Adress->getID() << "."*/<< Adress->getElement() << " ";
         Adress = Adress->getNext();
     }
 }
@@ -84,6 +84,92 @@ void SLinkedList::SwapFirstWithN(int range){
     else
         std::cerr << "ERR: Out of range" << std::endl;
 }
+
+int SLinkedList::FindSmallestID(int Distance){
+    int elem_small, position=0;
+    SNode * FirstNode = head;
+    position  = Distance;
+    for (int i=0; i < Distance; ++i){
+        FirstNode = FirstNode->getNext();
+    }
+    elem_small = FirstNode->getID();
+    for (int j = (Distance + 1); j < (Length); j++){
+        if (FirstNode->getNext()->getID() < elem_small){
+            elem_small = FirstNode->getNext()->getID();
+            position = j;
+        }
+        FirstNode = FirstNode ->getNext();
+
+    }
+    return position;
+}
+
+void SLinkedList::SortList(){
+    std::cout << std::endl;
+    int pos;
+    SNode * FirstNode = head;
+    SNode * FndNode = head;
+    std::string temp;
+    int temp2;
+    for(int i=0;i<Length;i++){
+        pos = FindSmallestID(i);
+        
+        for (int i = 0; i < pos; i++)
+            FndNode = FndNode->getNext();
+           
+        temp = FirstNode->getElement();
+        FirstNode->setElement(FndNode->getElement());
+        FndNode->setElement(temp);
+
+        temp2 = FirstNode->getID();
+        FirstNode->setID(FndNode->getID());
+        FndNode->setID(temp2);
+
+        FirstNode = FirstNode -> getNext();
+        FndNode = head;
+    }
+}
+  
+
+int findSmallest(int myarray[],int i)
+{
+   int ele_small,position,j;
+   ele_small = myarray[i];
+   position = i;
+   for(j=i+1;j<5;j++)
+   {
+      if(myarray[j]<ele_small)
+      {
+      ele_small = myarray[j];
+      position=j;
+      }
+   }
+   return position;
+}
+
+
+//  int myarray[5] = { 12,4,3,1,15};
+//     SNode * FirstNode = head;
+//     SNode * ScNode = head;
+//     int l = 1;
+
+//     for(int k=1; k < Length; k++){
+      
+//       while(l == k){
+//             FirstNode = ScNode;
+//             ScNode = ScNode->getNext();
+//       }
+
+//         int IDFst = FirstNode->getID();
+//         int IDSc = ScNode->getID();
+//         int j= k-1;
+
+//       while(j>=0 && IDSc <= IDFst){
+//         myarray[j+1] = myarray[j];
+//         --j;
+//       }
+//    myarray[j+1] = temp;
+
 
 /* Wyswietlenie poczatku listy*/
 const std::string & SLinkedList::front() const{

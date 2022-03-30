@@ -12,5 +12,9 @@ int main(){
    std::cout << "!Pomieszana wiadomosc:" << std::endl;
    Message_sender.Print_message();
    std::cout << std::endl;
+   Message_sender.SortMsg();
+   std::cout << "!Posorotwana wiadomosc:" << std::endl;
+   Message_sender.Print_message();
+   std::cout << std::endl;
    return 0;
 } 

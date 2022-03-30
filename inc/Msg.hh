@@ -10,4 +10,7 @@ class Message{
         void ParseByWord(std::string Text);
         void Print_message();
         void ScrambleMsg();
+        void SortMsg();
 };
+
+

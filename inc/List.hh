@@ -17,6 +17,8 @@ private:
         int getID() {return ID;};
         void setElement(std::string newE) {elem = newE;}
         void setNext(SNode* newN) {next = newN;}
+        void setID(int newID) {ID = newID;}
+    
 };
 
 class SLinkedList{
@@ -35,6 +37,7 @@ class SLinkedList{
         void DisplayList();
         void RemoveFront(); 
         int getLength();
-        
+        void SortList();
+        int FindSmallestID(int Distance);
 };
 

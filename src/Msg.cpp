@@ -13,12 +13,14 @@ void Message::Print_message(){
 }
 
 void Message::ScrambleMsg(){
-    Message_text.SwapFirstWithN(3);
-    int number = 4;
     srand(time(0));
-    for (int i = 0 ; i<10000; i++){
-        number = 2 + std::rand() % (Message_text.getLength() - 2 + 1);
-        Message_text.SwapFirstWithN(number);
-    }
+    for (int i = 0 ; i<10000; i++)
+        Message_text.SwapFirstWithN(2 + std::rand() % (Message_text.getLength() - 2 + 1));
 }
+
+void Message::SortMsg(){
+    Message_text.SortList(); 
+}
+
+
 
