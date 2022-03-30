@@ -25,9 +25,11 @@ class SLinkedList{
     private:
         int Length;
         SNode* head;
+        int FindSmallestID(int Distance);
     public:
         SLinkedList(){Length = 0; head = NULL;}; //konstruktor
-    // ~SLinkedList(); //destruktor
+        // ~SLinkedList(); //destruktor
+        int getLength() {return Length;}
         bool Empty() const; //sprawdzanie czy lista jest pusta
         const std::string & front() const; //zwraca pierwszy element
         void AddFront(const std::string & node_data); //dodawanie na początek listy
@@ -36,8 +38,8 @@ class SLinkedList{
         void SwapFirstWithN(int ID);
         void DisplayList();
         void RemoveFront(); 
-        int getLength();
+        void swapNodes(int x, int y);
+        void SwapNWithM(int DistanceN, int DistanceM);
         void SortList();
-        int FindSmallestID(int Distance);
 };
 

@@ -15,7 +15,7 @@ void Message::Print_message(){
 void Message::ScrambleMsg(){
     srand(time(0));
     for (int i = 0 ; i<10000; i++)
-        Message_text.SwapFirstWithN(2 + std::rand() % (Message_text.getLength() - 2 + 1));
+        Message_text.SwapNWithM(1,2 + std::rand() % (Message_text.getLength() - 2 + 1));
 }
 
 void Message::SortMsg(){
