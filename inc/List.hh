@@ -17,7 +17,6 @@ private:
         int getID() {return ID;};
         void setElement(std::string newE) {elem = newE;}
         void setNext(SNode* newN) {next = newN;}
-        void setID(int newID) {ID = newID;}
     
 };
 
@@ -32,13 +31,9 @@ class SLinkedList{
         int getLength() {return Length;}
         bool Empty() const; //sprawdzanie czy lista jest pusta
         const std::string & front() const; //zwraca pierwszy element
-        void AddFront(const std::string & node_data); //dodawanie na początek listy
         void Append(const std::string & node_data);
-        void insertAfter(const std::string & node_data, int ID);
-        void SwapFirstWithN(int ID);
         void DisplayList();
         void RemoveFront(); 
-        void swapNodes(int x, int y);
         void SwapNWithM(int DistanceN, int DistanceM);
         void SortList();
 };
