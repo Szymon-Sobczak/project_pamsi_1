@@ -124,31 +124,7 @@ Wyswietlenie poczatku listy
 */
 
 void SLinkedList::SortList(){
-    int pos;
     for(int i=0;i<Length;i++){ // n
-        pos = FindSmallestID(i); // n
-        SwapNWithM(i+1,pos+1); //n 
+        SwapNWithM(i+1,FindSmallestID(i)+1); //2n 
     }
-}
-  
-/* 
-    Funkcja zwracająca zawartość treści węzłą z początku listy.
-    f(n) = 1 -> O(1)
-*/
-const std::string & SLinkedList::front() const{
-    return  head -> getElement();
-}
-
-/* 
-    Metoda usuwająca pierwszy element z początku listy.
-    f(n) = 1 -> O(1)
-*/
-void SLinkedList::RemoveFront(){
-    if(head != NULL){
-        SNode * tmp = head;
-        head = head->getNext();
-        delete tmp;
-    }
-    else 
-        std::cerr << "No nodes to delete" << std::endl;
 }
