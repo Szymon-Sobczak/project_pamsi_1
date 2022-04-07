@@ -4,37 +4,43 @@
 #include <fstream>
 #include <string>
 
-class SNode{ //węzeł listy jednokier.
+/*
+    Klasa węzła listy jednokierunkowej. 
+*/
+
+class SNode{ 
 private:
-    std::string elem; //wartość elementu listy
-    int ID;
-    SNode * next; //następny elem. listy
-    //friend class SLinkedList; //dostęp dla listy
+    std::string elem; // Wartość elementu listy.
+    int ID;           // Pirorytet węzła.
+    SNode * next;     // Wskaźnik na następny elem. listy.
     public:
-        SNode(int newID) {ID = newID;};
-        std::string & getElement() {return elem;}
+        SNode(int newID) {ID = newID;}; // Konstrukotr węzła.
+        std::string & getElement() {return elem;}  // Gettery i settery.
         SNode* getNext() {return next;}
         int getID() {return ID;};
         void setElement(std::string newE) {elem = newE;}
         void setNext(SNode* newN) {next = newN;}
-    
 };
+
+
+/*
+    Klasa listy jednokierukowej
+*/
 
 class SLinkedList{
     private:
-        int Length;
-        SNode* head;
+        int Length;     // Pole przetrzymujace informacje o dlugosci listy.
+        SNode* head;    // Wskaznik na nagłowek listy.
         int FindSmallestID(int Distance);
     public:
-        SLinkedList(){Length = 0; head = NULL;}; //konstruktor
-        // ~SLinkedList(); //destruktor
-        int getLength() {return Length;}
-        bool Empty() const; //sprawdzanie czy lista jest pusta
-        const std::string & front() const; //zwraca pierwszy element
-        void Append(const std::string & node_data);
-        void DisplayList();
-        void RemoveFront(); 
-        void SwapNWithM(int DistanceN, int DistanceM);
-        void SortList();
+        SLinkedList(){Length = 0; head = NULL;}; // Konstruktor listy.
+        int getLength() {return Length;}         // Getter długości listy
+        bool Empty() const;                // Sprawdzanie czy lista jest pusta.
+        const std::string & front() const; // Zwraca pierwszy element listy.
+        void Append(const std::string & node_data); // Dołącza węzeł na koniec listy.
+        void DisplayList(); // Wyświetlenie całej listy.
+        void RemoveFront(); // Usunięcie pierwszego elementu listy.
+        void SwapNWithM(int DistanceN, int DistanceM); // Zamiana N- tego elementu listy z M-tym.
+        void SortList(); // Sortowanie listy z użyciem algorytmu sortowania przez wybór.
 };
 
