@@ -18,4 +18,3 @@ Build by making a build directory (i.e. `build/`), run `cmake` in that dir, and 
 Requirements: cmake
 
 The main loop of the program is in the `app` folder.
-
