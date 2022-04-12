@@ -22,7 +22,6 @@ private:
         void setNext(SNode* newN) {next = newN;}
 };
 
-
 /*
     Klasa listy jednokierukowej
 */

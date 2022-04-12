@@ -1,3 +1,7 @@
+/*
+   Przygotował Szymon Sobczak 259275.
+*/
+
 #include "List.hh"
 #include "Msg.hh"
 
@@ -33,7 +37,7 @@ int main(){
    Message_sender.SortMsg(); // n^2
    
    // Treść wiadomości widziana przez odbiorcę.
-   std::cout << std::endl << "!Posorotwana wiadomosc:" << std::endl;
+   std::cout << std::endl << "!Posortowana wiadomosc:" << std::endl;
    Message_sender.Print_message(); // n
    std::cout << std::endl;
    
