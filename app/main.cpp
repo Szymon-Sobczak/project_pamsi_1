@@ -7,7 +7,6 @@
 
 /*
    Driver przedstawiający działanie programu.
-
    f(n) = n^2 + 5n + ... -> O(n^2)
 */
 

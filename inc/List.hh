@@ -28,8 +28,8 @@ private:
 
 class SLinkedList{
     private:
-        int Length;     // Pole przetrzymujace informacje o dlugosci listy.
-        SNode* head;    // Wskaznik na pierwszy element listy - nagłówek.
+        int Length;   // Pole przetrzymujace informacje o dlugosci listy.
+        SNode* head;  // Wskaznik na pierwszy element listy - nagłówek.
         int FindSmallestID(int Distance);
     public:
         SLinkedList(){Length = 0; head = NULL;}; // Konstruktor listy.

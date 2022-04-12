@@ -96,7 +96,6 @@ void SLinkedList::SwapNWithM(int DistanceN, int DistanceM){
     currX->setNext(temp); 
 }
 
-
 /*
     Znalezienie wezla o najnizszym priorytecie.
     f(n) = 2n + ... -> O(n)
@@ -119,7 +118,7 @@ int SLinkedList::FindSmallestID(int Distance){
 }
 
 /* 
-Wyswietlenie poczatku listy
+    Metoda sortujaca liste.
     f(n) = 2n^2 + ... -> O(n^2)
 */
 
